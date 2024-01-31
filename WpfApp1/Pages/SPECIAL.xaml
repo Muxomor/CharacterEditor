@@ -1,0 +1,94 @@
+﻿<Window x:Class="WpfApp1.Pages.SPECIAL"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Pages"
+        mc:Ignorable="d"
+        Title="SPECIAL" Height="450" Width="500">
+    <Grid>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Vertical" Margin="0 0 100 0">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock>LVL</TextBlock>
+                    <TextBlock Name="lvlTB">1</TextBlock>
+                </StackPanel>
+                <StackPanel Margin="10 0 0 0" Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Name="changeClassBackwardBTN">back</Button>
+                        <TextBlock Name="classNameTB">class</TextBlock>
+                        <Button Name="changeClassForwardBTN">forward</Button>
+                    </StackPanel>
+                    <TextBlock HorizontalAlignment="Center" Name="nameTB">1</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button>-</Button>
+                <TextBlock Margin="1 0 10 0">Strength:</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="strTB">12</TextBlock>
+                <Button>+</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button>-</Button>
+                <TextBlock Margin="1 0 10 0">Dexterity:</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="dexTB">12</TextBlock>
+                <Button>+</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button>-</Button>
+                <TextBlock Margin="1 0 10 0">Intelligence:</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="intTB">12</TextBlock>
+                <Button>+</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button>-</Button>
+                <TextBlock Margin="1 0 10 0">Vitality:</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="vitTB">12</TextBlock>
+                <Button>+</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock TextAlignment="Center" Width="70" TextWrapping="Wrap">Stat Points Remaining</TextBlock>
+                <TextBlock Margin="10 0 0 0">example</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="0 0 10 0" Name="applyPointsBtn">Apply</Button>
+                <Button Name="resetPointsBtn">Reset points</Button>
+            </StackPanel>
+            
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Center" Margin="100 0 0 0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Health:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="HealthTb">0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 20">
+                <TextBlock Margin="1 0 10 0">Mana:</TextBlock>
+                <TextBlock Margin="0 0 0 0" x:Name="ManaTb">0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Physical Damage:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="PhysicDamageTb">0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Armor:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="ArmorTb" >0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Magic Damage:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="MagicDamageTb">0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Magic Defense:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="MagicDefenseTb">0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Crit Chance:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="CritChanceTb" >0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Crit Damage:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="CritDmgTb" >0</TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
