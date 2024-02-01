@@ -25,27 +25,38 @@
                 <Button x:Name="strMinusBtn">-</Button>
                 <TextBlock Margin="1 0 10 0">Strength:</TextBlock>
                 <TextBlock Margin="0 0 10 0" Name="strTB">12</TextBlock>
-                <Button x:Name="strPlusBtn">+</Button>
+                <TextBlock Margin="0 0 10 0" Name="strRoflTb" Visibility="Hidden" >+</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="strAddTB" Visibility="Hidden">12</TextBlock>
+                <Button x:Name="strPlusBtn" Margin="15 0 0 0">+</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="dexMinusBtn">-</Button>
                 <TextBlock Margin="1 0 10 0">Dexterity:</TextBlock>
                 <TextBlock Margin="0 0 10 0" Name="dexTB">12</TextBlock>
-                <Button x:Name="dexPlusBtn">+</Button>
+                <TextBlock Margin="0 0 10 0" Name="dexRoflTb" Visibility="Hidden" >+</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="dexAddTB" Visibility="Hidden">12</TextBlock>
+                <Button x:Name="dexPlusBtn" Margin="13 0 0 0">+</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="intMinusBtn">-</Button>
                 <TextBlock Margin="1 0 10 0">Intelligence:</TextBlock>
                 <TextBlock Margin="0 0 10 0" Name="intTB">12</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="intRoflTb" Visibility="Hidden" >+</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="intAddTB" Visibility="Hidden">12</TextBlock>
                 <Button x:Name="intPlusBtn">+</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="vitMinusBtn">-</Button>
                 <TextBlock Margin="1 0 10 0">Vitality:</TextBlock>
                 <TextBlock Margin="0 0 10 0" Name="vitTB">12</TextBlock>
-                <Button x:Name="vitPlusBtn">+</Button>
+                <TextBlock Margin="0 0 10 0" Name="vitRoflTb" Visibility="Hidden" >+</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="vitAddTB" Visibility="Hidden">12</TextBlock>
+                <Button Margin="24.9 0 0 0" x:Name="vitPlusBtn">+</Button>
             </StackPanel>
-
+            <StackPanel Orientation="Horizontal">
+                <TextBlock TextAlignment="Center" Width="70" TextWrapping="Wrap">Stat Points Remaining</TextBlock>
+                <TextBlock Margin="10 0 0 0" x:Name="statPointsTb">example</TextBlock>
+            </StackPanel>
             <StackPanel Orientation="Horizontal"> 
                 <Button Margin="0 0 10 0" Name="applyPointsBtn" Click="applyPointsBtn_Click">Apply</Button>
                 <Button Name="resetPointsBtn" Click="resetPointsBtn_Click">Reset points</Button>
