@@ -43,5 +43,20 @@ namespace WpfApp1.Pages
         {
 
         }
+
+        private void onehundredExpBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void fivehundredExpBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void thousandExpBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

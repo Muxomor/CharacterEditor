@@ -121,7 +121,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Character.cs" />
+    <Compile Include="ICharacter.cs" />
+    <Compile Include="Rogue.cs" />
+    <Compile Include="Warrior.cs" />
+    <Compile Include="Wizard.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

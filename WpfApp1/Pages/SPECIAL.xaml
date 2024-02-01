@@ -101,9 +101,9 @@
         <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 70">
             <StackPanel Orientation="Horizontal">
                 <TextBlock>experience gain:</TextBlock>
-                <Button x:Name="onehundredExpBtn">+100</Button>
-                <Button x:Name="fivehundredExpBtn" Margin="10 0">+500</Button>
-                <Button x:Name="thousandExpBtn">+1000</Button>
+                <Button x:Name="onehundredExpBtn" Click="onehundredExpBtn_Click">+100</Button>
+                <Button x:Name="fivehundredExpBtn" Margin="10 0" Click="fivehundredExpBtn_Click">+500</Button>
+                <Button x:Name="thousandExpBtn" Click="thousandExpBtn_Click">+1000</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Vertical">

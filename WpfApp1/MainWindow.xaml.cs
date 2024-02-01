@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.Pages;
 
 namespace WpfApp1
 {
@@ -23,6 +24,40 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private void applyPointsBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void resetPointsBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void changeClassForwardBTN_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void changeClassBackwardBTN_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void onehundredExpBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void fivehundredExpBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void thousandExpBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

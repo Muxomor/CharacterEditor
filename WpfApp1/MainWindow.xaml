@@ -5,8 +5,121 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="500">
     <Grid>
-        
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Vertical" Margin="0 0 100 0">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Margin="0 0 0 0" Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal" Margin="30 0">
+                        <Button Name="changeClassBackwardBTN" Click="changeClassBackwardBTN_Click" Content="&lt;"></Button>
+                        <TextBlock Name="classNameTB">class</TextBlock>
+                        <Button Name="changeClassForwardBTN" Click="changeClassForwardBTN_Click" Content=">"></Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock>Name:</TextBlock>
+                        <TextBox x:Name="nameTb" Width="70"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="strMinusBtn">-</Button>
+                <TextBlock Margin="1 0 10 0">Strength:</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="strTB">12</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="strRoflTb" Visibility="Hidden" >+</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="strAddTB" Visibility="Hidden">12</TextBlock>
+                <Button x:Name="strPlusBtn" Margin="15 0 0 0">+</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="dexMinusBtn">-</Button>
+                <TextBlock Margin="1 0 10 0">Dexterity:</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="dexTB">12</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="dexRoflTb" Visibility="Hidden" >+</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="dexAddTB" Visibility="Hidden">12</TextBlock>
+                <Button x:Name="dexPlusBtn" Margin="13 0 0 0">+</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="intMinusBtn">-</Button>
+                <TextBlock Margin="1 0 10 0">Intelligence:</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="intTB">12</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="intRoflTb" Visibility="Hidden" >+</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="intAddTB" Visibility="Hidden">12</TextBlock>
+                <Button x:Name="intPlusBtn">+</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="vitMinusBtn">-</Button>
+                <TextBlock Margin="1 0 10 0">Vitality:</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="vitTB">12</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="vitRoflTb" Visibility="Hidden" >+</TextBlock>
+                <TextBlock Margin="0 0 10 0" Name="vitAddTB" Visibility="Hidden">12</TextBlock>
+                <Button Margin="24.9 0 0 0" x:Name="vitPlusBtn">+</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock TextAlignment="Center" Width="70" TextWrapping="Wrap">Stat Points Remaining</TextBlock>
+                <TextBlock Margin="10 0 0 0" x:Name="statPointsTb">example</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="0 0 10 0" Name="applyPointsBtn" Click="applyPointsBtn_Click">Apply</Button>
+                <Button Name="resetPointsBtn" Click="resetPointsBtn_Click">Reset points</Button>
+            </StackPanel>
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Center" Margin="100 0 0 0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Health:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="HealthTb">0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 20">
+                <TextBlock Margin="1 0 10 0">Mana:</TextBlock>
+                <TextBlock Margin="0 0 0 0" x:Name="ManaTb">0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Physical Damage:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="PhysicDamageTb">0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Armor:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="ArmorTb" >0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Magic Damage:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="MagicDamageTb">0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Magic Defense:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="MagicDefenseTb">0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Crit Chance:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="CritChanceTb" >0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="1 0 10 0">Crit Damage:</TextBlock>
+                <TextBlock Margin="0 0 10 0" x:Name="CritDmgTb" >0</TextBlock>
+            </StackPanel>
+
+        </StackPanel>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 60">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>experience gain:</TextBlock>
+                <Button x:Name="onehundredExpBtn" Click="onehundredExpBtn_Click">+100</Button>
+                <Button x:Name="fivehundredExpBtn" Margin="10 0" Click="fivehundredExpBtn_Click">+500</Button>
+                <Button x:Name="thousandExpBtn" Click="thousandExpBtn_Click">+1000</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock>LVL</TextBlock>
+                    <TextBlock Name="lvlTB">1</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="10 0">
+                    <TextBlock>totalExp</TextBlock>
+                    <TextBlock Name="totalExpTb">0</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" >
+                    <TextBlock>neededExp</TextBlock>
+                    <TextBlock Name="neededExpTb">0</TextBlock>
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
     </Grid>
 </Window>
