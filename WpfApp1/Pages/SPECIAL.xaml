@@ -87,7 +87,7 @@
             </StackPanel>
            
         </StackPanel>
-        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 80">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 70">
             <StackPanel Orientation="Horizontal">
                 <TextBlock>experience gain:</TextBlock>
                 <Button x:Name="onehundredExpBtn">+100</Button>
