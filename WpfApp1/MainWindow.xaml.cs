@@ -29,7 +29,7 @@ namespace WpfApp1
         {
 
         }
-
+         
         private void resetPointsBtn_Click(object sender, RoutedEventArgs e)
         {
 
