@@ -24,7 +24,22 @@ namespace WpfApp1.Pages
             InitializeComponent();
         }
 
-        private void applyPointsBtn_Click()
+        private void applyPointsBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void resetPointsBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void changeClassForwardBTN_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void changeClassBackwardBTN_Click(object sender, RoutedEventArgs e)
         {
 
         }

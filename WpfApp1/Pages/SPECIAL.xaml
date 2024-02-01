@@ -45,10 +45,7 @@
                 <TextBlock Margin="0 0 10 0" Name="vitTB">12</TextBlock>
                 <Button x:Name="vitPlusBtn">+</Button>
             </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock TextAlignment="Center" Width="70" TextWrapping="Wrap">Stat Points Remaining</TextBlock>
-                <TextBlock Margin="10 0 0 0" x:Name="statPointsTb">example</TextBlock>
-            </StackPanel>
+
             <StackPanel Orientation="Horizontal"> 
                 <Button Margin="0 0 10 0" Name="applyPointsBtn" Click="applyPointsBtn_Click">Apply</Button>
                 <Button Name="resetPointsBtn" Click="resetPointsBtn_Click">Reset points</Button>
