@@ -23,5 +23,10 @@ namespace WpfApp1.Pages
         {
             InitializeComponent();
         }
+
+        private void applyPointsBtn_Click()
+        {
+
+        }
     }
 }

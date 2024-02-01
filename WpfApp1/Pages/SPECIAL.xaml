@@ -15,44 +15,44 @@
                 </StackPanel>
                 <StackPanel Margin="10 0 0 0" Orientation="Vertical">
                     <StackPanel Orientation="Horizontal">
-                        <Button Name="changeClassBackwardBTN">back</Button>
+                        <Button Name="changeClassBackwardBTN" Click="changeClassBackwardBTN_Click">back</Button>
                         <TextBlock Name="classNameTB">class</TextBlock>
-                        <Button Name="changeClassForwardBTN">forward</Button>
+                        <Button Name="changeClassForwardBTN" Click="changeClassForwardBTN_Click">forward</Button>
                     </StackPanel>
                     <TextBlock HorizontalAlignment="Center" Name="nameTB">1</TextBlock>
                 </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Button>-</Button>
+                <Button x:Name="strMinusBtn">-</Button>
                 <TextBlock Margin="1 0 10 0">Strength:</TextBlock>
                 <TextBlock Margin="0 0 10 0" Name="strTB">12</TextBlock>
-                <Button>+</Button>
+                <Button x:Name="strPlusBtn">+</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Button>-</Button>
+                <Button x:Name="dexMinusBtn">-</Button>
                 <TextBlock Margin="1 0 10 0">Dexterity:</TextBlock>
                 <TextBlock Margin="0 0 10 0" Name="dexTB">12</TextBlock>
-                <Button>+</Button>
+                <Button x:Name="dexPlusBtn">+</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Button>-</Button>
+                <Button x:Name="intMinusBtn">-</Button>
                 <TextBlock Margin="1 0 10 0">Intelligence:</TextBlock>
                 <TextBlock Margin="0 0 10 0" Name="intTB">12</TextBlock>
-                <Button>+</Button>
+                <Button x:Name="intPlusBtn">+</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Button>-</Button>
+                <Button x:Name="vitMinusBtn">-</Button>
                 <TextBlock Margin="1 0 10 0">Vitality:</TextBlock>
                 <TextBlock Margin="0 0 10 0" Name="vitTB">12</TextBlock>
-                <Button>+</Button>
+                <Button x:Name="vitPlusBtn">+</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock TextAlignment="Center" Width="70" TextWrapping="Wrap">Stat Points Remaining</TextBlock>
-                <TextBlock Margin="10 0 0 0">example</TextBlock>
+                <TextBlock Margin="10 0 0 0" x:Name="statPointsTb">example</TextBlock>
             </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Button Margin="0 0 10 0" Name="applyPointsBtn">Apply</Button>
-                <Button Name="resetPointsBtn">Reset points</Button>
+            <StackPanel Orientation="Horizontal"> 
+                <Button Margin="0 0 10 0" Name="applyPointsBtn" Click="applyPointsBtn_Click">Apply</Button>
+                <Button Name="resetPointsBtn" Click="resetPointsBtn_Click">Reset points</Button>
             </StackPanel>
             
         </StackPanel>
