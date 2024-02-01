@@ -9,13 +9,16 @@
     <Grid>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Vertical" Margin="0 0 100 0">
             <StackPanel Orientation="Horizontal">
-                <StackPanel Margin="10 0 0 0" Orientation="Vertical">
-                    <StackPanel Orientation="Horizontal">
+                <StackPanel Margin="0 0 0 0" Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal" Margin="30 0">
                         <Button Name="changeClassBackwardBTN" Click="changeClassBackwardBTN_Click" Content="&lt;"></Button>
                         <TextBlock Name="classNameTB">class</TextBlock>
                         <Button Name="changeClassForwardBTN" Click="changeClassForwardBTN_Click" Content=">"></Button>
                     </StackPanel>
-                    <TextBlock HorizontalAlignment="Center" Name="nameTB">1</TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock>Name:</TextBlock>
+                        <TextBox x:Name="nameTb" Width="70"></TextBox>
+                    </StackPanel>
                 </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
