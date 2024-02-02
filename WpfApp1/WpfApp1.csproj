@@ -121,6 +121,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Experience.cs" />
     <Compile Include="ICharacter.cs" />
     <Compile Include="Rogue.cs" />
     <Compile Include="Warrior.cs" />

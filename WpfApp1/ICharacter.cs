@@ -7,18 +7,22 @@ namespace WpfApp1
         ObjectId Id { get; set; }
         string Name { get; set; }
         string ClassName { get; }
+        int Level { get; set; }
+        int Experience { get; set; }
+        int UnspendedPoints { get; set; }
+
         int Strength { get; set; }
         int Dexterity { get; set; }
-        int Inteligence { get; set; }
+        int Intelligence { get; set; }
         int Vitality { get; set; }
 
         int MinStrength { get; }
         int MinDexterity { get; }
-        int MinInteligence { get; }
+        int MinIntelligence { get; }
         int MinVitality { get; }
         int MaxStrength { get; }
         int MaxDexterity { get; }
-        int MaxInteligence { get; }
+        int MaxIntelligence { get; }
         int MaxVitality { get; }
 
         int MaxHealth { get; }
@@ -26,11 +30,11 @@ namespace WpfApp1
         int PhysicalDamage { get; }
         int Armor { get; }
         int MagicDamage { get; }
-        int MagicDafence { get; }
-        int CritChanse { get; }
+        int MagicDefense { get; }
+        int CritChance { get; }
         int CritDamage { get; }
-        int Level { get; }
-        int TotalExp { get; set; }
-        int NeededExp { get; }
-    
+
+
+        void OnExpUpdate();
+    }
 }
